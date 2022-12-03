@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Hero from "../components/Hero";
 import Nav from "../components/Nav";
+import Head from "next/head";
 
 function Blog({ posts }) {
   function createDescription(content) {
@@ -13,6 +14,9 @@ function Blog({ posts }) {
   }
   return (
     <>
+      <Head>
+        <title>An AI For An AI</title>
+      </Head>
       <Nav />
       <Hero posts={posts} />
       <ul className="flex flex-wrap mt-10 justify-center 2xl:mx-16">

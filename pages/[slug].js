@@ -6,6 +6,7 @@ import ReactMarkdown from "markdown-to-jsx";
 import Nav from "../components/Nav";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import Head from "next/head";
 
 function BlogPost({ post }) {
   const router = useRouter();
@@ -13,6 +14,9 @@ function BlogPost({ post }) {
   const { slug } = router.query;
   return (
     <div>
+      <Head>
+        <title>{post.data.title}</title>
+      </Head>
       <Nav />
       <div className="mx-4">
         <div className="max-w-4xl mx-auto px-6 py-8 bg-gray-100 rounded-lg shadow-lg mb-8">
