@@ -1,5 +1,6 @@
 ---
 title: My First Blog Post
+date: 03.12.2022
 ---
 
 # My First Blog Post

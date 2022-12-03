@@ -1,17 +1,30 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import React from "react";
 import ReactMarkdown from "markdown-to-jsx";
+import Nav from "../components/Nav";
 
 function BlogPost({ post }) {
-  return <ReactMarkdown>{post.content}</ReactMarkdown>;
+  return (
+    <>
+      <Nav />
+      <div className="max-w-2xl mx-auto px-4 py-8 bg-gray-100 rounded-lg shadow-lg">
+        <h1 className="text-2xl font-bold text-gray-800 mb-4">{post.title}</h1>
+        <p className="text-gray-700 mb-4">{post.date}</p>
+        <div className="prose prose-lg">
+          <ReactMarkdown>{post.content}</ReactMarkdown>
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default BlogPost;
 
 export async function getStaticProps({ params }) {
   const { slug } = params;
-  const filePath = path.join(process.cwd(), "posts", `${slug}.mdx`);
+  const filePath = path.join(process.cwd(), "posts", `${slug}.md`);
   const fileContent = fs.readFileSync(filePath, "utf8");
   const data = matter(fileContent);
 
@@ -32,7 +45,7 @@ export async function getStaticPaths() {
 
   const paths = filenames.map((filename) => ({
     params: {
-      slug: filename.replace(".mdx", ""),
+      slug: filename.replace(".md", ""),
     },
   }));
 
