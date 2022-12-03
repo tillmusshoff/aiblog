@@ -7,7 +7,7 @@ function Blog({ posts }) {
   return (
     <ul>
       {posts.map((post) => (
-        <li key={post.slug}>
+        <li key={post.slug} className="text-orange-500">
           <Link href="/[slug]" as={`/${post.slug}`}>
             {post.title}
           </Link>
