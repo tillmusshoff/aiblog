@@ -7,7 +7,7 @@ import Nav from "../components/Nav";
 
 function BlogPost({ post }) {
   return (
-    <>
+    <div>
       <Nav />
       <div className="max-w-2xl mx-auto px-4 py-8 bg-gray-100 rounded-lg shadow-lg">
         <h1 className="text-2xl font-bold text-gray-800 mb-4">{post.title}</h1>
@@ -16,7 +16,7 @@ function BlogPost({ post }) {
           <ReactMarkdown>{post.content}</ReactMarkdown>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
