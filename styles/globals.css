@@ -120,3 +120,7 @@ button {
 .text-black {
   color: #000000 !important;
 }
+
+.border-b-violet {
+  border-bottom: 2px solid #af66ff;
+}

@@ -8,4 +8,11 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  corePlugins: {
+    textOpacity: false,
+    backgroundOpacity: false,
+    divideOpacity: false,
+    borderOpacity: false,
+    placeholderOpacity: false,
+  },
 };
