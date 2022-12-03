@@ -108,3 +108,15 @@ button {
 .button {
   background-image: linear-gradient(to right, #be16e0, #af66ff, #969fff);
 }
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}

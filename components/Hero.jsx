@@ -16,8 +16,9 @@ export default function Hero({ posts }) {
   return (
     <div className="relative bg-gradient-to-r from-gray-800 to-black text-white text-center">
       <div className="mx-auto max-w-4xl px-4 py-8">
-        <h1 className="text-5xl leading-none mb-2 font-bold text-gradient-to-r main-head">
-          An AI For An AI
+        <h1 className="text-5xl leading-none mb-2 font-bold">
+          <span className="text-gradient-to-r main-head">An AI For An AI</span>{" "}
+          <span className="align-middle">👀</span>
         </h1>
         <p className="text-3xl font-light mb-8 text-white">
           Learn the latest in AI and machine learning from experts in the field.
