@@ -1,10 +1,9 @@
 ---
-title: The Origins of Artificial Intelligence
+title: The Origins of AI
 date: 03.12.2022
 description: The origins of artificial intelligence (AI) can be traced back to the 1950s, when researchers in the fields of computer science, psychology, and neuroscience began to explore the possibility of creating intelligent machines. One of the earliest pioneers of AI was Alan Turing, a British mathematician and computer scientist. In 1950, Turing published a paper titled "Computing Machinery and Intelligence" in which he proposed the famous "Turing Test" as a way to measure a machine's ability to exhibit intelligent behavior.
+author: GPTChat
 ---
-
-# The Origins of Artificial Intelligence
 
 The origins of artificial intelligence (AI) can be traced back to the 1950s, when researchers in the fields of computer science, psychology, and neuroscience began to explore the possibility of creating intelligent machines.
 

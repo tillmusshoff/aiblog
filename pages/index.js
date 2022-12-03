@@ -22,17 +22,17 @@ function Blog({ posts }) {
             className=" text-orange-500 w-full sm:w-[45%] md:w-[30%] mx-4 my-4"
           >
             <Link href="/[slug]" as={`/${post.slug}`}>
-              <div className="bg-white rounded-lg shadow-lg p-4">
+              <div className="bg-white  rounded-lg shadow-lg p-4">
                 <div className="flex items-center justify-between">
-                  <h2 className="text-2xl font-bold mb-2">{post.title}</h2>
+                  <h2 className="text-2xl font-bold">{post.title}</h2>
                   <i className="fas fa-bookmark text-violet-500"></i>
                 </div>
-                <p className="mb-2 text-gray-700">{post.date}</p>
+                <p className=" text-gray-700 -mt-1">{post.date}</p>
                 <div className="relative rounded-lg overflow-hidden">
                   <Image
                     src={"/images/" + post.slug + ".png"}
                     alt={post.title}
-                    className="w-full rounded-lg object-cover"
+                    className="w-full rounded-lg object-cover h-64"
                     width={800}
                     height={500}
                   />
@@ -40,7 +40,7 @@ function Blog({ posts }) {
                     <i className="fas fa-search text-violet-400 text-5xl"></i>
                   </div>
                 </div>
-                <p className="text-gray-700 mt-2">
+                <p className="text-gray-700 mt-3">
                   {createDescription(post.description)}
                 </p>
               </div>

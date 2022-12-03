@@ -16,7 +16,7 @@ export default function Hero({ posts }) {
   return (
     <div className="relative bg-gradient-to-r from-gray-800 to-black text-white text-center">
       <div className="mx-auto max-w-4xl px-4 py-8">
-        <h1 className="text-5xl leading-none mb-2 font-bold text-white">
+        <h1 className="text-5xl leading-none mb-2 font-bold text-gradient-to-r main-head">
           An AI For An AI
         </h1>
         <p className="text-3xl font-light mb-8 text-white">
@@ -25,7 +25,7 @@ export default function Hero({ posts }) {
 
         <div className="flex justify-center">
           <button
-            className="px-4 py-2 rounded-lg shadow-lg bg-gradient-to-r from-violet-400 to-indigo-500 hover:bg-purple-700 text-white"
+            className="px-4 py-2 rounded-lg shadow-md hover:shadow-lg button hover:-translate-y-1 transition-all duration 200 text-white"
             onClick={() => openRandomPost()}
           >
             Explore a Random Post

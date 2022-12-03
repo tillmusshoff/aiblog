@@ -27,7 +27,7 @@ h1 {
 h2 {
   @apply text-3xl font-bold text-gray-900 leading-tight;
   margin-top: 18px;
-  margin-bottom: 9px;
+  margin-bottom: 4px;
 }
 
 /* Heading 3 */
@@ -88,4 +88,23 @@ button {
 
 .blog-post {
   @apply bg-gradient-to-r from-purple-600 to-indigo-700;
+}
+
+.card {
+  background: linear-gradient(
+    to bottom,
+    rgba(140, 92, 246, 0.1) 100%,
+    rgba(140, 92, 246, 0) 0%
+  );
+}
+
+.main-head {
+  /* Gradient text effect */
+  background-image: linear-gradient(to right, #ff00d4, #af66ff, #969fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button {
+  background-image: linear-gradient(to right, #be16e0, #af66ff, #969fff);
 }
